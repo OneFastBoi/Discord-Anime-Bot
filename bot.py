@@ -29,9 +29,9 @@ class Scrape:
         print('# Update complete')  
 
 Scrape = Scrape()
+
 client = commands.Bot(command_prefix = '!')
 x = True
-
 
 @client.event
 async def on_ready():    
@@ -55,4 +55,4 @@ async def anime_status():
         print('# Not released yet')    
     print('# Update time = ' + str(datetime.datetime.now()))
 
-client.run('ODE0MjE2MjUyNTA2NzY3Mzcw.YDan-g.FXQ9avmXJu9ivR4eBNg6vH-NBXk')
+client.run('ODE0MjE2MjUyNTA2NzY3Mzcw.YDan-g.-orrvbKh4J5JvCPOuVoY2BFqmvg')
