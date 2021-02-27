@@ -74,4 +74,5 @@ async def animeStatus():
         print('# Not released yet')    
     print('# Update time = ' + str(datetime.datetime.now()))
 
-client.run('ODE0MjE2MjUyNTA2NzY3Mzcw.YDan-g.-orrvbKh4J5JvCPOuVoY2BFqmvg')
+token = open('token.txt','r')
+client.run(token.read())
