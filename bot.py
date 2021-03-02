@@ -16,7 +16,7 @@ async def on_ready():
 async def addAnime(ctx,link):
     animeName = Backend.getName(link)
     page = Backend.search(animeName)
-    data = animeName + ',' + link + ',' + Backend.getStatus(page,link)
+    data = animeName + ',' + link + ',' + Backend.getStatus(page,link) + '\n'
     Backend.updateDatabase(data)
 
 @client.command()
